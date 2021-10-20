@@ -16,6 +16,8 @@ function validateInput(element) {
 function addTodo(e) {
     //prevent form from submitting
     e.preventDefault();
+    todoInput.style.background = "white";
+    todoInput.style.opacity = "1"
     // validate input
   try {
     validateInput(todoInput);
@@ -23,7 +25,8 @@ function addTodo(e) {
     todoInput.style.outline = "";
   } catch (err) {
     if (err) alert(err.message);
-    todoInput.style.borderColor = "red";
+    todoInput.style.background = "red";
+    todoInput.style.opacity = "0.5"
     todoInput.style.outline = "none";
     return;
   }
