@@ -23,7 +23,7 @@ function addTodo(e) {
     saveLocalTodos(todoInput.value);
     //
     newTodo.classList.add("todo-item");
-    todoDiv.appendChild(newTodo);
+    todo.appendChild(newTodo);
     todoInput.value= "";
     // check mark button
     const completedButton = document.createElement('button');
@@ -136,3 +136,4 @@ function getTodos() {
         todoList.appendChild(todoDiv);
     });
 }
+
