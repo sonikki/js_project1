@@ -36,10 +36,11 @@ form button:hover {
     background: #9a78e9;
     color: white;
 }
-.todo.container{
+.todo-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 30%;
 }
 .todo.list {
     min-width: 30%;
