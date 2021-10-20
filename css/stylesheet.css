@@ -40,9 +40,9 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30%;
+    
 }
-.todo.list {
+.todo-list {
     min-width: 30%;
     list-style: none;
 
@@ -119,10 +119,11 @@ select {
     overflow: hidden;
   }
   select {
-    color: 12148a;
-    font-family: "Poppins", sans-serif;
+    color: #12148a;
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
     width: 12rem;
+    padding: 1rem;
   }
   /* Arrow */
   .select::after {
