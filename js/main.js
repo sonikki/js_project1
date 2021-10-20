@@ -9,9 +9,24 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteTodo);
 filterOption.addEventListener('click', filterTodo);
 // FUNCTIONS 
+function validateInput(element) {
+    if (element.value === "" || element.value.length < 3)
+      throw new Error("input is invalid");
+  }
 function addTodo(e) {
     //prevent form from submitting
     e.preventDefault();
+    // validate input
+  try {
+    validateInput(todoInput);
+    todoInput.style.borderColor = "";
+    todoInput.style.outline = "";
+  } catch (err) {
+    if (err) alert(err.message);
+    todoInput.style.borderColor = "red";
+    todoInput.style.outline = "none";
+    return;
+  }
     // create todo DIV
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
