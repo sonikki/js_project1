@@ -22,7 +22,7 @@ form input, form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
-    backround: white;
+    background: white;
 
 }
 form button {
@@ -31,8 +31,9 @@ form button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 form button:hover {
-    backround: #9a78e9;
+    background: #9a78e9;
     color: white;
 }
 .todo.container{
@@ -94,7 +95,7 @@ form button:hover {
 
 }
 .fall {
-    transform: translateY(8rem);
+    transform: translateY(10rem);
     opacity: 0;
 }
 
@@ -117,7 +118,7 @@ select {
     overflow: hidden;
   }
   select {
-    color: #ff6f47;
+    color: 12148a;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     width: 12rem;
@@ -129,7 +130,7 @@ select {
     top: 0;
     right: 0;
     padding: 1rem;
-    background: #ff6f47;
+    background: #12148a;
     cursor: pointer;
     pointer-events: none;
   }
